@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MainActivity</string>
+    <string name="total_sales">Total Sales</string>
+    <string name="gbp_6_872_32">GBP 6,872,32</string>
+    <string name="fashion_and_apparel">Fashion and Apparel</string>
+    <string name="company_name">Company Name</string>
+    <string name="leaderboard">LEADERBOARD</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="downloads">DOWNLOADS</string>
+    <string name="user_sessions">USER SESSIONS</string>
+</resources>

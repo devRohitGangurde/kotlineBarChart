@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+
+    <TextView
+        android:id="@+id/textViewTotalSales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="SORT BY"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/facebookView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bdbdbd"
+        app:layout_constraintTop_toBottomOf="@id/textViewTotalSales" />
+
+    <TextView
+        android:id="@+id/textViewAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_check_black_24dp"
+        android:drawableLeft="@drawable/ic_check_black_24dp"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/add_to_cart"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/facebookView" />
+
+    <View
+        android:id="@+id/twitterView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bdbdbd"
+        app:layout_constraintTop_toBottomOf="@id/textViewAddToCart" />
+
+    <TextView
+        android:id="@+id/textViewDownloads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_check_black_24dp"
+        android:drawableLeft="@drawable/ic_check_black_24dp"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/downloads"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/twitterView" />
+
+    <View
+        android:id="@+id/instagramView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bdbdbd"
+        app:layout_constraintTop_toBottomOf="@id/textViewDownloads" />
+
+    <TextView
+        android:id="@+id/textViewUserSessions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_check_black_24dp"
+        android:drawableLeft="@drawable/ic_check_black_24dp"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/user_sessions"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/instagramView" />
+
+    <View
+        android:id="@+id/userSessionView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bdbdbd"
+        app:layout_constraintTop_toBottomOf="@id/textViewUserSessions" />
+
+    <TextView
+        android:id="@+id/textViewSortBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_check_black_24dp"
+        android:drawableLeft="@drawable/ic_check_black_24dp"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/user_sessions"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/userSessionView" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bdbdbd"
+        app:layout_constraintTop_toBottomOf="@id/textViewSortBy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
